@@ -84,6 +84,13 @@ function update() {
         gameOver = true;
         alert("Game Over");
     }
+    
+    for(let i = 0; i < snakeBody.length; i++){
+        if(snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]){
+            gameOver = true;
+            alert("Game Over");
+        }
+    }
 }
 
 function changeDirection(e){
